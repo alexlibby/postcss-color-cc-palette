@@ -40,7 +40,7 @@ Add a rule to your code that contains the Color CC url, such as this example:
 }
 ```
 
-Output
+#Output
 When compiled, the code will look like this:
 ```
 Code to follow...
