@@ -40,7 +40,7 @@ var colors = [], colorMode, val = '--color';
 
 module.exports = postcss.plugin('postcss-color-cc-palette', function () {
     return function (css) {
-        css.walkDecls(decl => {
+        css..walkDecls(function (decl) {
             var value = decl.value;
 
             if (value.indexOf('color-wheel') !== -1) {
