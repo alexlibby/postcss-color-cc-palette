@@ -10,7 +10,7 @@ Once created, it can be made available via the Marketing Cloud - this is useful 
 #Installation
 Enter this command into a Node.js command prompt:
 ```
-Command to follow...
+npm install postcss-color-cc-palette --save-dev
 ```
 
 #Usage
