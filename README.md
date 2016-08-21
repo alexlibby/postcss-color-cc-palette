@@ -40,6 +40,18 @@ Add a rule to your code that contains the Color CC url, such as this example:
 }
 ```
 
+#Output
+When compiled, you will see a series of SASS-like variables appear at the top of your style sheet:
+```
+:root {
+  --color0: rgb(131, 116, 92);
+  --color1: rgb(151, 215, 178);
+  --color2: rgb(207, 192, 166);
+  --color3: rgb(137, 110, 156);
+  --color4: rgb(117, 98, 131);
+}
+```
+
 #To do:
 - Add an option to override the color variable name
 
