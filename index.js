@@ -81,7 +81,6 @@ module.exports = postcss.plugin('postcss-color-cc-palette', function () {
                         }
 
                         // remove original rule
-                        var selectorID = rule.selector;
                         rule.remove();
                     }
                 }
