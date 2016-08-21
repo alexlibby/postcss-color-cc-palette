@@ -41,7 +41,6 @@ var colors = [], colorMode, val = '--color';
 module.exports = postcss.plugin('postcss-color-cc-palette', function () {
     return root => {
         root.walkDecls(function (decl) {
-            var rule = root.first;
             var value = decl.value;
 
             if (value.indexOf('color-wheel') !== -1) {
@@ -73,7 +72,7 @@ module.exports = postcss.plugin('postcss-color-cc-palette', function () {
                         }
 
                         // render chosen format of color on screen
-                        var root = decl.parent
+                        root = decl.parent
                             .cloneBefore({ selector: ':root' }).removeAll();
 
                         for (var x = 0; x < 5; x++) {
