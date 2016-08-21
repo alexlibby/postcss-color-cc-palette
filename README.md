@@ -1,6 +1,6 @@
 <b>Note: This is still in active development!</b>
 
-# Color CC Palette for PostCSS
+# Color CC Palette for PostCSS   [![Build Status](https://travis-ci.org/alexlibby/postcss-color-cc-palette.svg?branch=master)](https://travis-ci.org/alexlibby/postcss-color-cc-palette)
 A PostCSS plugin to create SASS-like color variables based on an Adobe Color CC palette URL.
 
 The Adobe Color CC tool (at https://color.adobe.com) can be used to create palettes using a color wheel.
