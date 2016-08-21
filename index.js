@@ -42,6 +42,7 @@ module.exports = postcss.plugin('postcss-color-cc-palette', function () {
     return root => {
         root.walkDecls(function (decl) {
             var value = decl.value;
+            var rule = root.first;
 
             if (value.indexOf('color-wheel') !== -1) {
 
