@@ -39,8 +39,9 @@ function displayHEX(rgb) {
 var colors = [], colorMode, val = '--color';
 
 module.exports = postcss.plugin('postcss-color-cc-palette', function () {
-    return function (css) {
-        css.walkDecls(function (decl) {
+    return function (root) {
+        root.walkDecls(function (decl) {
+            var rule = root.first;
             var value = decl.value;
 
             if (value.indexOf('color-wheel') !== -1) {
