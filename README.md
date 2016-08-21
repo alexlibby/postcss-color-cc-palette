@@ -1,5 +1,3 @@
-<b>Note: This is still under active development!</b>
-
 # Color CC Palette for PostCSS
 A PostCSS plugin to create SASS-like color variables based on an Adobe Color CC palette URL.
 
