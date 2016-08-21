@@ -16,7 +16,20 @@ npm install postcss-color-cc-palette --save-dev
 #Usage
 The plugin can be referenced in Gulp using this example code:
 ```
-Code to follow...
+'use strict';
+ 
+var gulp = require('gulp');
+var postcss = require('gulp-postcss');
+var palette = require('postcss-color-cc-palette');
+
+
+gulp.task('palette', function () {
+  return gulp.src('src/*.css')
+    .pipe(postcss([ palette() ]))
+    .pipe(gulp.dest('dest/'));
+});
+
+gulp.task('default', ['palette']);
 ```
 
 #Input
