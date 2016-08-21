@@ -1,6 +1,6 @@
 {
   "name": "postcss-color-cc-palette",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "PostCSS plugin to convert an Adobe Color CC URL to SASS color values",
   "keywords": [
     "postcss",
