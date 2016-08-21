@@ -39,7 +39,7 @@ function displayHEX(rgb) {
 var colors = [], colorMode, val = '--color';
 
 module.exports = postcss.plugin('postcss-color-cc-palette', function () {
-    return function (root) {
+    return root => {
         root.walkDecls(function (decl) {
             var rule = root.first;
             var value = decl.value;
