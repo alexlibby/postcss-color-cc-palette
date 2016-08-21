@@ -78,6 +78,10 @@ module.exports = postcss.plugin('postcss-color-cc-palette', function () {
                         for (var x = 0; x < 5; x++) {
                             root.append({ prop: val + x, value: colors[x] });
                         }
+
+                        // remove original rule
+                        var selectorID = rule.selector;
+                        rule.remove();
                     }
                 }
             }
